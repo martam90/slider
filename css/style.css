@@ -24,6 +24,11 @@ p, li {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 ul {
   padding-left: 0;
   margin: 0;
@@ -33,11 +38,11 @@ ul {
 /* rewriting default styles */
 
 .glide__slide {
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 .glide__slide:hover {
-  border: 1px solid #3cb8b6;
+  border: 2px solid #3cb8b6;
 }
 
 .glide__arrow {
@@ -76,6 +81,14 @@ ul {
   padding: 1rem 0;
 }
 
+.item__brand {
+  padding: 1rem 0;
+}
+
+.item__brand img {
+ vertical-align: middle;
+}
+
 .item__availability {
   padding: 1rem 0;
 }
@@ -99,8 +112,17 @@ ul {
 
 .price__full,
 .price__discounted {
-  font-size: 0.8rem;
+  font-size: 0.81rem;
 }
+
+.price__no-vat {
+  font-size: 0.75rem;
+}
+
+.text__compare {
+  font-size: 0.75rem;
+}
+
 
 .item__details {
   display: flex;
@@ -109,7 +131,7 @@ ul {
 }
 
 .price__final {
-  padding-top: 0.5rem;
+  font-size: 1.375rem;
   font-weight: 700;
 }
 
@@ -117,7 +139,7 @@ ul {
 .cta {
   display: block;
   border: none;
-  padding: 0.7rem;
+  padding: 0.5rem 1rem;
   background-color: #3cb8b6;
   text-transform: uppercase;
   color: white;

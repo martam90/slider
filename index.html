@@ -46,14 +46,12 @@
                 </div>
 
                 <a href="#" class="item__compare">
-                  <img src="images/pr_vaha.png" alt="ikona porovnavani">
+                  <i class="fas fa-balance-scale"></i>
                   <p class="text__compare">Porovnej</p>
                 </a>
 
-                <div class="item__details">
                   <p class="price__final"> 7990 Kč</p>
                   <button class="cta">Detail</button>
-                </div>
               </div>
             </div>
           </li>
@@ -452,10 +450,10 @@
 
       const glide = new Glide('.glide', config).mount();
 
-      // glide.on('run.before', evt => {
-      //   const scrollSteps = glide.settings.perView;
-      //   evt.steps = evt.direction === '>' ? -scrollSteps : scrollSteps;
-      // });
+      glide.on('run.before', evt => {
+        const scrollSteps = glide.settings.perView;
+        evt.steps = evt.direction === '>' ? -scrollSteps : scrollSteps;
+      });
     </script>
 </body>
 </html>

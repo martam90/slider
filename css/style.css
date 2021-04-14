@@ -1,3 +1,5 @@
+/* general + reset */
+
 *,
 *::after,
 *::before {
@@ -28,9 +30,7 @@ ul {
   list-style: none;
 }
 
-.item {
-  padding: 1rem;
-}
+/* rewriting default styles */
 
 .glide__slide {
   border: 1px solid white;
@@ -58,6 +58,12 @@ ul {
   width: 1.5rem;
   height: 1.5rem;
   fill: #3cb8b6;
+}
+
+/* my styles */
+
+.item {
+  padding: 1rem;
 }
 
 .item__image {
@@ -107,6 +113,7 @@ ul {
   font-weight: 700;
 }
 
+/* button */
 .cta {
   display: block;
   border: none;

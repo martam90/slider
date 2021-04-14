@@ -14,6 +14,10 @@ body {
   font-size: 1rem;
 }
 
+:focus {
+  outline: 2px dotted #000000;
+}
+
 p, li {
   margin: 0;
 }
@@ -79,7 +83,42 @@ ul {
   font-size: 0.8rem;
 }
 
+.item__description {
+  font-size: 0.8rem;
+}
+
 .item__price {
   padding-top: 1rem;
+}
+
+.price__full,
+.price__discounted {
+  font-size: 0.8rem;
+}
+
+.item__details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.price__final {
+  padding-top: 0.5rem;
   font-weight: 700;
+}
+
+.cta {
+  display: block;
+  border: none;
+  padding: 0.7rem;
+  background-color: #3cb8b6;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background ease-in-out 300ms;
+}
+
+.cta:hover {
+  background-color: #333232;
 }
